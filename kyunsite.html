@@ -1,91 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>kyundere.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <style>
             * {
                 cursor: url(mouse-cursor/arrow/frame_0_delay-0.01s.gif), auto;
-                -webkit-animation: cursor 400ms infinite;
-                animation: cursor 400ms infinite;
+                -webkit-animation: cursor 700ms infinite;
+                animation: cursor 700ms infinite;
             }
 
             @-webkit-keyframes cursor {
                 0% {cursor: url(mouse-cursor/arrow/frame_0_delay-0.01s.gif), auto;}
-                20% {cursor: url(mouse-cursor/arrow/frame_1_delay-0.01s.gif), auto;}
-                40% {cursor: url(mouse-cursor/arrow/frame_2_delay-0.01s.gif), auto;}
-                60% {cursor: url(mouse-cursor/arrow/frame_3_delay-0.01s.gif), auto;}
-                80% {cursor: url(mouse-cursor/arrow/frame_4_delay-0.01s.gif), auto;}
-                100% {cursor: url(mouse-cursor/arrow/frame_5_delay-0.01s.gif), auto;}
+                16.6666% {cursor: url(mouse-cursor/arrow/frame_1_delay-0.01s.gif), auto;}
+                33.3333% {cursor: url(mouse-cursor/arrow/frame_2_delay-0.01s.gif), auto;}
+                50% {cursor: url(mouse-cursor/arrow/frame_3_delay-0.01s.gif), auto;}
+                66.6666% {cursor: url(mouse-cursor/arrow/frame_4_delay-0.01s.gif), auto;}
+                83.3333% {cursor: url(mouse-cursor/arrow/frame_5_delay-0.01s.gif), auto;}
+                100% {cursor: url(mouse-cursor/arrow/frame_6_delay-0.01s.gif), auto;}
             }
 
             @keyframes cursor {
                 0% {cursor: url(mouse-cursor/arrow/frame_0_delay-0.01s.gif), auto;}
-                20% {cursor: url(mouse-cursor/arrow/frame_1_delay-0.01s.gif), auto;}
-                40% {cursor: url(mouse-cursor/arrow/frame_2_delay-0.01s.gif), auto;}
-                60% {cursor: url(mouse-cursor/arrow/frame_3_delay-0.01s.gif), auto;}
-                80% {cursor: url(mouse-cursor/arrow/frame_4_delay-0.01s.gif), auto;}
-                100% {cursor: url(mouse-cursor/arrow/frame_5_delay-0.01s.gif), auto;}
-            }
-            body{
-                background: url(background.png) no-repeat center center fixed;
-                background-size: cover;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
+                16.6666% {cursor: url(mouse-cursor/arrow/frame_1_delay-0.01s.gif), auto;}
+                33.3333% {cursor: url(mouse-cursor/arrow/frame_2_delay-0.01s.gif), auto;}
+                50% {cursor: url(mouse-cursor/arrow/frame_3_delay-0.01s.gif), auto;}
+                66.6666% {cursor: url(mouse-cursor/arrow/frame_4_delay-0.01s.gif), auto;}
+                83.3333% {cursor: url(mouse-cursor/arrow/frame_5_delay-0.01s.gif), auto;}
+                100% {cursor: url(mouse-cursor/arrow/frame_6_delay-0.01s.gif), auto;}
             }
 
-            .header {
-                display: flex;
-                flex-direction: row;
+            @-webkit-keyframes cursor-hover {
+                0% {cursor: url(mouse-cursor/link/frame_0_delay-0.01s.gif), auto}
+                100% {cursor: url(mouse-cursor/link/frame_1_delay-0.01s.gif), auto}
             }
 
-            .outer {
-                display: grid;
-                place-items: center;
-            }
-
-            .logo {
-                padding-top: 200px;
-                width: 800px;
-                height: auto;
-                object-fit: contain;
-            }
-
-            .welcome-button {
-                position: absolute;
-                transform: translate(-50%, -50%);
-                width: 200px;
-                border-radius: 20px;
-                background-color: transparent;
-                border-color: white;
-                color: #C82FC8;
-                cursor: pointer;
-            }
-            
-            .welcome-button:hover {
-                border-color: #C82FC8;
+            @keyframes cursor-hover {
+                0% {cursor: url(mouse-cursor/link/frame_0_delay-0.01s.gif), auto}
+                100% {cursor: url(mouse-cursor/link/frame_1_delay-0.01s.gif), auto}
             }
 
         </style>
     </head>
-    <body>
-        <div class="header">
-            <div style="background-color: lightblue;">
-                contact me                    
-            </div>
-            <div style="background-color: lightpink; margin-left: 20px;">
-                shop
-            </div>
-        </div>
-        <div class="outer">
-            <div>
+    <body id="test">
+        <video autoplay loop muted class="background-video">
+            <source src="background.mp4" type="video/mp4">
+        </video>
+        <div class="container">
                 <img src="PNG_Color_2.png" class="logo">
-            </div>
-            <div>
-                <button class="welcome-button"> 
-                    <a href="kyunsite-2.html">welcome</a>
-                </button>
-            </div>
+                <button class="welcome-button" onclick="window.location.href='kyunsite-2.html'">welcome</button>
         </div>
     </body>
 </html>
