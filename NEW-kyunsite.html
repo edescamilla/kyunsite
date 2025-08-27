@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            * {
+                cursor: url(mouse-cursor/arrow/frame_0_delay-0.01s.gif), auto;
+                -webkit-animation: cursor 700ms infinite;
+                animation: cursor 700ms infinite;
+            }
+
+            @-webkit-keyframes cursor {
+                0% {cursor: url(mouse-cursor/arrow/frame_0_delay-0.01s.gif), auto;}
+                16.6666% {cursor: url(mouse-cursor/arrow/frame_1_delay-0.01s.gif), auto;}
+                33.3333% {cursor: url(mouse-cursor/arrow/frame_2_delay-0.01s.gif), auto;}
+                50% {cursor: url(mouse-cursor/arrow/frame_3_delay-0.01s.gif), auto;}
+                66.6666% {cursor: url(mouse-cursor/arrow/frame_4_delay-0.01s.gif), auto;}
+                83.3333% {cursor: url(mouse-cursor/arrow/frame_5_delay-0.01s.gif), auto;}
+                100% {cursor: url(mouse-cursor/arrow/frame_6_delay-0.01s.gif), auto;}
+            }
+
+            @keyframes cursor {
+                0% {cursor: url(mouse-cursor/arrow/frame_0_delay-0.01s.gif), auto;}
+                16.6666% {cursor: url(mouse-cursor/arrow/frame_1_delay-0.01s.gif), auto;}
+                33.3333% {cursor: url(mouse-cursor/arrow/frame_2_delay-0.01s.gif), auto;}
+                50% {cursor: url(mouse-cursor/arrow/frame_3_delay-0.01s.gif), auto;}
+                66.6666% {cursor: url(mouse-cursor/arrow/frame_4_delay-0.01s.gif), auto;}
+                83.3333% {cursor: url(mouse-cursor/arrow/frame_5_delay-0.01s.gif), auto;}
+                100% {cursor: url(mouse-cursor/arrow/frame_6_delay-0.01s.gif), auto;}
+            }
+
+            @-webkit-keyframes cursor-hover {
+                0% {cursor: url(mouse-cursor/link/frame_0_delay-0.01s.gif), auto}
+                100% {cursor: url(mouse-cursor/link/frame_1_delay-0.01s.gif), auto}
+            }
+
+            @keyframes cursor-hover {
+                0% {cursor: url(mouse-cursor/link/frame_0_delay-0.01s.gif), auto}
+                100% {cursor: url(mouse-cursor/link/frame_1_delay-0.01s.gif), auto}
+            }
+
+        </style>
+    </head>
+    <body id="test">
+        <video autoplay loop muted class="background-video">
+            <source src="background.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+                <img src="PNG_Color_2.png" class="logo">
+                <button class="welcome-button" onclick="window.location.href='kyunsite-2.html'">welcome</button>
+        </div>
+    </body>
+</html>

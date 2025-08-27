@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/main.css">
+         <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <style>
+            .swiper {
+                display: flex;
+                position: absolute;
+                top: 62vh;
+                width: 40vh;
+                height: 9vh;
+                background-color: transparent;
+                color: #fff;
+                text-align: center;
+                align-content: center;
+            }
+
+            .swiper-slide {
+                width: 30px;
+                height: 50px;
+                object-fit: contain;
+                
+            }
+           
+            * {
+                cursor: url(mouse-cursor/arrow/frame_0_delay-0.01s.gif), auto;
+                -webkit-animation: cursor 700ms infinite;
+                animation: cursor 700ms infinite;
+            }
+
+            @-webkit-keyframes cursor {
+                0% {cursor: url(mouse-cursor/arrow/frame_0_delay-0.01s.gif), auto;}
+                16.6666% {cursor: url(mouse-cursor/arrow/frame_1_delay-0.01s.gif), auto;}
+                33.3333% {cursor: url(mouse-cursor/arrow/frame_2_delay-0.01s.gif), auto;}
+                50% {cursor: url(mouse-cursor/arrow/frame_3_delay-0.01s.gif), auto;}
+                66.6666% {cursor: url(mouse-cursor/arrow/frame_4_delay-0.01s.gif), auto;}
+                83.3333% {cursor: url(mouse-cursor/arrow/frame_5_delay-0.01s.gif), auto;}
+                100% {cursor: url(mouse-cursor/arrow/frame_6_delay-0.01s.gif), auto;}
+            }
+
+            @keyframes cursor {
+                0% {cursor: url(mouse-cursor/arrow/frame_0_delay-0.01s.gif), auto;}
+                16.6666% {cursor: url(mouse-cursor/arrow/frame_1_delay-0.01s.gif), auto;}
+                33.3333% {cursor: url(mouse-cursor/arrow/frame_2_delay-0.01s.gif), auto;}
+                50% {cursor: url(mouse-cursor/arrow/frame_3_delay-0.01s.gif), auto;}
+                66.6666% {cursor: url(mouse-cursor/arrow/frame_4_delay-0.01s.gif), auto;}
+                83.3333% {cursor: url(mouse-cursor/arrow/frame_5_delay-0.01s.gif), auto;}
+                100% {cursor: url(mouse-cursor/arrow/frame_6_delay-0.01s.gif), auto;}
+            }
+
+            @-webkit-keyframes cursor-hover {
+                0% {cursor: url(mouse-cursor/link/frame_0_delay-0.01s.gif), auto}
+                100% {cursor: url(mouse-cursor/link/frame_1_delay-0.01s.gif), auto}
+            }
+
+            @keyframes cursor-hover {
+                0% {cursor: url(mouse-cursor/link/frame_0_delay-0.01s.gif), auto}
+                100% {cursor: url(mouse-cursor/link/frame_1_delay-0.01s.gif), auto}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div style="color: lightpink; margin-right: 15px;">contact me</div>
+            <div style="color: lightpink; margin-right: 15px">shop</div>
+            <div style="color: lightpink; margin-right: 15px;"></div>
+            <div style="color: lightpink; margin-right: 15px;">game recommendations</div>
+        </div>
+        <div class="container">
+            <img style="border-radius: 10px;" src="kyun-wave.gif" class="art">
+            <div class="swiper mySwiper">
+                <div class = "swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://x.com/kyxndere"><img class="socials" src="logos/square-x-twitter-brands.svg"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://twitch.com/kyundere"><img class="socials" src="logos/twitch-brands.svg"></a>
+                    </div>
+                    <div style="color: lightpink; display: inline-block;" class="swiper-slide">
+                        <a href="https://www.tiktok.com/@kyunndere"><img class="socials" src="logos/tiktok-brands.svg" ></a>
+                    </div>
+                    <div style="color: lightpink; display: inline-block;" class="swiper-slide">
+                        <a href="https://www.patreon.com/kyundere"><img class="socials" src="logos/patreon-brands.svg"></a>
+                    </div>
+                    <div style="color: lightpink; display: inline-block;" class="swiper-slide">
+                        <a href="https://www.youtube.com/channel/UCJ1nccH0r8tk_svSnBGOEew"><img class="socials" src="logos/youtube-brands.svg"></a>
+                    </div>
+                    <div style="color: lightpink; display: inline-block;" class="swiper-slide">
+                        <a href="https://discord.com/invite/kyun"><img class="socials" src="logos/discord-brands.svg"></a>
+                    </div>
+                    <div style="color: lightpink; display: inline-block;" class="swiper-slide">
+                        <a href="https://twitch.com/kyundere"><img class="socials" src="logos/twitch-brands.svg"></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>     
+            </div>
+            <img src="PNG_Color_2.png" class="logo">
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 5,
+            loop: true,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true, 
+            },
+            });
+        </script>
+    </body>
+</html>
